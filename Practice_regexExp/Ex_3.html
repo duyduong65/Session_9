@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let regexStr = /[a-zA-Z]/;
+    let regexVowel = /^[aiueoAIUEO]/;
+    let str = prompt("input String: ");
+    let countVowel = 0;
+    let countConsonant = 0;
+    let arr = str.split('');
+    for (let i = 0;i<arr.length;i++){
+        if (regexStr.test(arr[i])){
+            if (regexVowel.test(arr[i])){
+                countVowel++;
+            } else {
+                countConsonant++;
+            }
+        }
+    }
+    alert(` Có ${countVowel} nguyên âm và ${countConsonant} phụ âm`);
+</script>
+</body>
+</html>
