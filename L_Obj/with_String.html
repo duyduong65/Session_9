@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = "Tôi yêu ngôn ngữ lập trình Javascript";
+    console.log(str);
+    let arr = str.split("");
+    let countA = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === "a") {
+            countA++;
+        }
+    }
+    console.log("có " + countA + " ký tự a trong chuỗi");
+    str = str.replace("Javascript", "Typescript");
+    console.log(str);
+</script>
+</body>
+</html>
