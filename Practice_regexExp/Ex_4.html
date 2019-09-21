@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let regex = /[0-9]{6}/;
+    let code = prompt("Nhập vào mã bảo mật:")
+    if (regex.test(code)){
+        alert("accept");
+    } else {
+        alert("reject")
+    }
+
+</script>
+</body>
+</html>
