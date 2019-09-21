@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let regex =/^[a-zA-Z]*[a-zA-Z]$/;
+    let str = prompt("input string: ")
+    let arr = str.split(" ");
+    let count = 0;
+    for (let i=0;i<arr.length;i++){
+        if(regex.test(arr[i])){
+            count++;
+        }
+    }
+    alert(`Có ${count} từ trong chuối`);
+
+</script>
+</body>
+</html>
